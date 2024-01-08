@@ -4,13 +4,13 @@ class Program
 {
     static void Main(string[] args)
     {
-        var productManager = new ProductManager(@"/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/Database/products.txt");
+        var productManager = new ProductManager("/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/Database/products.txt");
 
         var product1 = new Product
         {
             Name = "Product 1",
             Description = "This is product 1.",
-            Price = 10.00m,
+            Price = 1567.00m,
             StockQuantity = 10,
             Supplier = new Supplier
             {
@@ -22,7 +22,6 @@ class Program
 
         var product2 = new Product
         {
-            Id = 2,
             Name = "Product 2",
             Description = "This is product 2.",
             Price = 15.00m,
@@ -36,6 +35,7 @@ class Program
             }
         };
         productManager.UpdateProduct(product2);
+        productManager.AddProduct(product2);
 
         productManager.RemoveProduct(3);
 
@@ -47,7 +47,7 @@ class Program
             Console.WriteLine($"Product Description: {product3.Description}");
             Console.WriteLine($"Product Price: {product3.Price}");
             Console.WriteLine($"Product Stock Quantity: {product3.StockQuantity}");
-            Console.WriteLine($"Product Supplier: {product3.Supplier.Id}");
+            Console.WriteLine($"Product Supplier: {product3.Supplier.Name}");
         }
     }
 }
