@@ -2,9 +2,9 @@ namespace InventoryManagementSystem;
 
 public class Supplier
 {
-    public int Id { get; set; }
+    private static int id = 0;
+    public int Id = ++id; 
     public string Name { get; set; }
-    public string Address { get; set; }
-    public string PhoneNumber { get; set; }
-    public string EmailAddress { get; set; }
+    public string ContactDetails { get; set; }
+    public List<Product> Products { get; set; }
 }
