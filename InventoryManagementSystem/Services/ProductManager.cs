@@ -19,14 +19,14 @@ public class ProductManager
         }
     }
 
-    public void UpdateProduct(Product product)
+    public void UpdateProduct(Product product, int id)
     {
         var products = File.ReadAllLines(productsFilePath).ToList();
 
         for (int i = 0; i < products.Count; i++)
         {
             var productParts = products[i].Split(',');
-            if (int.Parse(productParts[0]) == product.Id)
+            if (int.Parse(productParts[0]) == id)
             {
                 products[i] = $"{product.Id},{product.Name},{product.Description},{product.Price},{product.StockQuantity},{product.Supplier.Id}";
                 break;
