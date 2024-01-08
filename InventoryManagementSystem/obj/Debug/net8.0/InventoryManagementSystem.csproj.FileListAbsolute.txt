@@ -1,0 +1,14 @@
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/bin/Debug/net8.0/InventoryManagementSystem
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/bin/Debug/net8.0/InventoryManagementSystem.deps.json
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/bin/Debug/net8.0/InventoryManagementSystem.runtimeconfig.json
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/bin/Debug/net8.0/InventoryManagementSystem.dll
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/bin/Debug/net8.0/InventoryManagementSystem.pdb
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.GeneratedMSBuildEditorConfig.editorconfig
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.AssemblyInfoInputs.cache
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.AssemblyInfo.cs
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.csproj.CoreCompileInputs.cache
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.dll
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/refint/InventoryManagementSystem.dll
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.pdb
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.genruntimeconfig.cache
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/ref/InventoryManagementSystem.dll
