@@ -13,3 +13,6 @@
 /home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.genruntimeconfig.cache
 /home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/ref/InventoryManagementSystem.dll
 /home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.sourcelink.json
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/bin/Debug/net8.0/Spectre.Console.dll
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.csproj.AssemblyReference.cache
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.csproj.CopyComplete

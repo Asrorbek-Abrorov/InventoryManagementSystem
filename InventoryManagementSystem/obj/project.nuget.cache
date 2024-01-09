@@ -1,8 +1,11 @@
 {
   "version": 2,
-  "dgSpecHash": "mXg9JkFMmA8uQZYlWH6hPbw5RjiHE+4Qowyj2ZPXm+3N9TOdLiYBm/KdN4IjaaBVqKPeFOgppcmOiQLiim1CwQ==",
+  "dgSpecHash": "XdcFf/w1Rr4nrJRw8tkvu3q809/0fg17dO7oPVqLFEoTosYzZwAXAgFFSMdPuLOyuEcVlIldzqz8GTJfGqCNuw==",
   "success": true,
   "projectFilePath": "/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/InventoryManagementSystem.csproj",
-  "expectedPackageFiles": [],
+  "expectedPackageFiles": [
+    "/home/as_abrorov/.nuget/packages/spectre.console/0.48.0/spectre.console.0.48.0.nupkg.sha512",
+    "/home/as_abrorov/.nuget/packages/system.memory/4.5.5/system.memory.4.5.5.nupkg.sha512"
+  ],
   "logs": []
 }
