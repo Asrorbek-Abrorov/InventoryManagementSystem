@@ -7,8 +7,8 @@ namespace InventoryManagementSystem
     {
         static void Main(string[] args)
         {
-            var productManager = new ProductManager("/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/Database/products.txt");
-            var supplierManager = new SupplierManager("/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/Database/suppliers.txt");
+            var productManager = new ProductManager(@"../../../../InventoryManagementSystem/Database/products.txt");
+            var supplierManager = new SupplierManager(@"../../../../InventoryManagementSystem/Database/suppliers.txt");
             var mainUi = new MainUi(productManager, supplierManager);
             mainUi.Run();
         }

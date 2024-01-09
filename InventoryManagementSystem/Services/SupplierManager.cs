@@ -65,7 +65,7 @@ public class SupplierManager
     
     public Supplier GetSupplierById(int supplierId)
     {
-        var suppliers = File.ReadAllLines("/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/Database/suppliers.txt").ToList();
+        var suppliers = File.ReadAllLines(filePath).ToList();
 
         foreach (var supplierLine in suppliers)
         {
