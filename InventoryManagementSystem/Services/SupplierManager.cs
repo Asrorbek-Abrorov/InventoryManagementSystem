@@ -1,4 +1,4 @@
-namespace InventoryManagementSystem;
+using InventoryManagementSystem;
 
 public class SupplierManager
 {
@@ -9,14 +9,14 @@ public class SupplierManager
         this.filePath = filePath;
     }
 
-    public void AddSupplier(Supplier supplier)
+    public bool AddSupplier(Supplier supplier)
     {
         var suppliers = GetSuppliers();
         suppliers.Add(supplier);
-        WriteSuppliersToFile(suppliers);
+        return WriteSuppliersToFile(suppliers);
     }
 
-    public void UpdateSupplier(Supplier supplier)
+    public bool UpdateSupplier(Supplier supplier)
     {
         var suppliers = GetSuppliers();
         var existingSupplier = suppliers.FirstOrDefault(s => s.Name == supplier.Name);
@@ -24,11 +24,13 @@ public class SupplierManager
         if (existingSupplier != null)
         {
             existingSupplier.ContactDetails = supplier.ContactDetails;
-            WriteSuppliersToFile(suppliers);
+            return WriteSuppliersToFile(suppliers);
         }
+
+        return false;
     }
 
-    public void RemoveSupplier(Supplier supplier)
+    public bool RemoveSupplier(Supplier supplier)
     {
         var suppliers = GetSuppliers();
         var existingSupplier = suppliers.FirstOrDefault(s => s.Name == supplier.Name);
@@ -36,11 +38,13 @@ public class SupplierManager
         if (existingSupplier != null)
         {
             suppliers.Remove(existingSupplier);
-            WriteSuppliersToFile(suppliers);
+            return WriteSuppliersToFile(suppliers);
         }
+
+        return false;
     }
 
-    private List<Supplier> GetSuppliers()
+    public List<Supplier> GetSuppliers()
     {
         var suppliers = new List<Supplier>();
 
@@ -50,11 +54,7 @@ public class SupplierManager
             while ((line = reader.ReadLine()) != null)
             {
                 var supplierParts = line.Split(',');
-                var supplier = new Supplier
-                {
-                    Name = supplierParts[0],
-                    ContactDetails = supplierParts[1]
-                };
+                var supplier = GetSupplierById(int.Parse(supplierParts[0]));
 
                 suppliers.Add(supplier);
             }
@@ -62,10 +62,51 @@ public class SupplierManager
 
         return suppliers;
     }
-
-    private void WriteSuppliersToFile(List<Supplier> suppliers)
+    
+    public Supplier GetSupplierById(int supplierId)
     {
-        var lines = suppliers.Select(s => $"{s.Id},{s.Name},{s.ContactDetails}");
-        File.WriteAllLines(filePath, lines);
+        var suppliers = File.ReadAllLines("/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/Database/suppliers.txt").ToList();
+
+        foreach (var supplierLine in suppliers)
+        {
+            var supplierParts = supplierLine.Split(',');
+            var supplier = new Supplier
+            {
+                Id = int.Parse(supplierParts[0]),
+                Name = supplierParts[1],
+                ContactDetails = supplierParts[2]
+            };
+
+            if (supplier.Id == supplierId)
+            {
+                return supplier;
+            }
+        }
+
+        return null;
+    }
+
+
+    private bool WriteSuppliersToFile(List<Supplier> suppliers)
+    {
+        try
+        {
+            var lines = suppliers.Select(s => $"{s.Id},{s.Name},{s.ContactDetails}");
+            File.WriteAllLines(filePath, lines);
+            return true;
+        }
+        catch (Exception)
+        {
+            return false;
+        }
+    }
+    
+    public Supplier FindSupplierByName(string name)
+    {
+        var suppliers = GetSuppliers();
+
+        var supplier = suppliers.FirstOrDefault(s => s.Name == name);
+
+        return supplier;
     }
 }
