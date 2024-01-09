@@ -65,7 +65,7 @@ public class SupplierManager
 
     private void WriteSuppliersToFile(List<Supplier> suppliers)
     {
-        var lines = suppliers.Select(s => $"{s.Name},{s.ContactDetails}");
+        var lines = suppliers.Select(s => $"{s.Id},{s.Name},{s.ContactDetails}");
         File.WriteAllLines(filePath, lines);
     }
 }

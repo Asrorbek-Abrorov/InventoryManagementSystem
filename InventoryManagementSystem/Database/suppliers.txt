@@ -1,2 +1,2 @@
-Supplier1,123456789
-Supplier2,123456789
+1,Supplier1,123456789
+2,Supplier2,123456789
