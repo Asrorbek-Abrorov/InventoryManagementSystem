@@ -1,3 +1,2 @@
-1,Product 2,Description 2,20,200,2
+1,Product 1,Description 1,10,100,1
 2,Product 2,Description 2,20,200,2
-3,Product 2,Description 2,20,200,2
