@@ -56,7 +56,7 @@ public class SupplierManager
                 {
                     Name = supplierParts[0],
                     ContactDetails = supplierParts[1],
-                    Products = GetSupplierProducts(supplierParts[2])
+                    // Products = GetSupplierProducts(supplierParts[2])
                 };
 
                 suppliers.Add(supplier);
@@ -70,7 +70,7 @@ public class SupplierManager
     {
         var products = new List<Product>();
 
-        using (var reader = new StreamReader($"products_{supplierId}.txt"))
+        using (var reader = new StreamReader(filePath))
         {
             string line;
             while ((line = reader.ReadLine()) != null)
@@ -78,10 +78,11 @@ public class SupplierManager
                 var productParts = line.Split(',');
                 var product = new Product
                 {
-                    Name = productParts[0],
-                    Description = productParts[1],
-                    Price = decimal.Parse(productParts[2]),
-                    StockQuantity = int.Parse(productParts[3])
+                    Id = int.Parse(productParts[0]),
+                    Name = productParts[1],
+                    Description = productParts[2],
+                    Price = decimal.Parse(productParts[3]),
+                    StockQuantity = int.Parse(productParts[4])
                 };
 
                 products.Add(product);
