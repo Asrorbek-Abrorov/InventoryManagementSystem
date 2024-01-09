@@ -12,3 +12,4 @@
 /home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.pdb
 /home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.genruntimeconfig.cache
 /home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/ref/InventoryManagementSystem.dll
+/home/as_abrorov/RiderProjects/InventoryManagementSystem/InventoryManagementSystem/obj/Debug/net8.0/InventoryManagementSystem.sourcelink.json
